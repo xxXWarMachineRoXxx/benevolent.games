@@ -5,6 +5,7 @@ import {V3} from "./game/utils/v3.js"
 import * as v3 from "./game/utils/v3.js"
 import {makeGame} from "./game/make-game.js"
 import {makeFramerateDisplay} from "./demo/make-framerate-display.js"
+import {parseHashForSessionId} from "sparrow-rtc/x/demo/utils/parse-hash-for-session-id.js"
 
 void async function setupPlay() {
 
@@ -29,4 +30,19 @@ void async function setupPlay() {
 			getFramerate: () => game.framerate,
 		})
 	)
+
+	{
+		const host = location.hash.endsWith("host")
+		const sessionId = parseHashForSessionId(location.hash)
+
+		if (host) {
+			
+		}
+		else if (sessionId) {
+	
+		}
+		else {
+	
+		}
+	}
 }()

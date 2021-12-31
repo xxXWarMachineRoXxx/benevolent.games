@@ -26,7 +26,9 @@
 		"watch-web": "chokidar \"x/web/**/*.js\" -c \"npm run web-debug -s && echo 'rebuilt web'\"",
 		"watch": "run-s web-debug && run-p watch-typescript watch-bundle watch-web",
 		"test": "cynic node --label='axiom games test suite' x/tests.test.js",
-		"start": "http-server x"
+		"start": "run-p start-http start-signal-server",
+		"start-http": "http-server x",
+		"start-signal-server": "node node_modules/sparrow-rtc/x/signal/signal-server.js 8192"
 	},
 	"devDependencies": {
 		"@rollup/plugin-node-resolve": "^13.1.1",
@@ -54,6 +56,7 @@
 		"es-module-shims": "^1.4.1",
 		"lit": "^2.0.2",
 		"rollup-plugin-sizes": "^1.0.4",
+		"sparrow-rtc": "0.0.0-dev.1",
 		"xiome": "^0.0.18"
 	},
 	"repository": {
