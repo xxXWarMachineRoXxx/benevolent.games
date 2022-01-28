@@ -1,0 +1,12 @@
+export declare type V2 = [number, number];
+export declare function zero(): V2;
+export declare function rotate(x: number, y: number, radians: number): V2;
+export declare function dot(a: V2, b: V2): number;
+export declare function distance([x1, y1]: V2, [x2, y2]: V2): number;
+export declare function atan2([ax, ay]: V2, [bx, by]: V2): number;
+export declare function magnitude([x, y]: V2): number;
+export declare function subtract(a: V2, b: V2): V2;
+export declare function normalize(vector: V2): V2;
+export declare function applyBy(vector: V2, change: (a: number) => number): V2;
+export declare function negate(vector: V2): V2;
+export declare function multiplyBy(vector: V2, factor: number): V2;

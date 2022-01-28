@@ -1,0 +1,1 @@
+{"version":3,"file":"prepare-transformer.js","sourceRoot":"","sources":["../../../s/web/utils/prepare-transformer.ts"],"names":[],"mappings":"AACA,OAAO,EAAC,SAAS,EAAC,MAAM,aAAa,CAAA;AAErC,MAAM,UAAU,kBAAkB,CAAC,MAAc;IAChD,OAAO,KAAK,UAAU,SAAS,CAAC,IAAY,EAAE,IAAY;QACzD,MAAM,SAAS,CAAC,MAAM,GAAG,IAAI,EAAE,IAAI,CAAC,IAAI,EAAE,CAAC,CAAA;IAC5C,CAAC,CAAA;AACF,CAAC"}

@@ -1,0 +1,10 @@
+export declare type V3 = [number, number, number];
+export declare function zero(): V3;
+export declare function add(...vectors: V3[]): V3;
+export declare function negate(vector: V3): V3;
+export declare function subtract(a: V3, b: V3): V3;
+export declare function addBy(vector: V3, delta: number): V3;
+export declare function multiplyBy(vector: V3, delta: number): V3;
+export declare function divideBy(vector: V3, delta: number): V3;
+export declare function magnitude([x, y, z]: V3): number;
+export declare function normalize(vector: V3): V3;
